@@ -1,0 +1,73 @@
+.contact-method {
+  float: left;
+  width: 50%;
+
+  .contact-method-title{
+    font-size: 3vh;
+  }
+}
+
+.contact-methods{
+  margin-top: 14vh;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.emailSubmit > *{
+  border: 0;
+  padding: 0 0 0 10px;
+  background: #fff;
+  line-height: 50px;
+  font-size: 1.6vh;
+  border-radius: 0;
+  outline: 0;
+  -webkit-appearance: none;
+
+}
+
+.alert-bademail{
+  color: red;
+  padding-bottom: 2px;
+}
+
+#emailField{
+width: 40%;
+}
+
+#submitBtn:hover{
+  background: #d73851;
+  border: 1px solid #d73851;
+}
+
+#submitBtn:disabled{
+  background: #aa1933;
+  border: 1px solid #aa1933;
+}
+
+#submitBtn{
+  background: #ef3f5a;
+  border: 1px solid #ef3f5a;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+  text-align: center;
+  width: 20%;
+  padding: 0px;
+}
+
+@media only screen and (max-device-width: 1196px) {
+  .contact-methods{
+    margin-top: 4vh !important;
+  }
+
+  .contact-method{
+    width: 100% !important;
+    padding-top: 10vh;
+  }
+}

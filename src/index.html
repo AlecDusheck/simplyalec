@@ -1,14 +1,76 @@
+<!--
+Hello view-source: reader,
+
+I really am interested in any intern opportunity. In fact, it would mean the WORLD to me.
+
+Please reach out to alec <at> simplyalec.com
+You will receive a response shortly. Mention this!
+-->
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Simplyalec6</title>
+  <title>Alec Dusheck</title>
   <base href="/">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="assets/favi/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/favi/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/favi/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/favi/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="assets/favi/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="assets/favi/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="assets/favi/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="assets/favi/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="assets/favi/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="assets/favi/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="assets/favi/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="assets/favi/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="assets/favi/favicon-128.png" sizes="128x128" />
+  <meta name="application-name" content="&nbsp;"/>
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="assets/favi/mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="assets/favi/mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="assets/favi/mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="assets/favi/mstile-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="assets/favi/mstile-310x310.png" />
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <app-root></app-root>
+<!-- ASSIGN OUR ANGULAR MODULE -->
+<app-root>
+  <style>
+    body{
+      background-color: white;
+    }
+    .full-loader {
+      z-index: 20;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 250px;
+      height: 250px;
+      margin-top: -125px;
+      margin-left: -125px;
+      animation: elastic-rotation 1.33s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+      background: url("assets/bolt_black.png") no-repeat center center;
+      background-size: 100px;
+    }
+    @keyframes elastic-rotation {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+  <div class="full-loader">
+  </div>
+</app-root>
+<script src="assets/pjs.min.js"></script>
 </body>
 </html>
+<!-- rel-0.1 (9/3/2018) -->
+<!-- ??? SG9wZWZ1bGx5IEkga2VlcCB0aGlzIHdlYnNpdGUgdXAtdG8tZGF0ZS4gTGV0cyBzZWUuLi4= ??? -->

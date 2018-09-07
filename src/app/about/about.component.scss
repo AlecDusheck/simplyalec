@@ -1,0 +1,43 @@
+#particles-js{
+  z-index: -2;
+  margin-top: -1vh;
+  height: 26vh;
+  width: 100%;
+}
+
+
+/* Custom details fontsize here because I keep changing the damn about me text. */
+#details{
+  p{
+    font-size: 2.5vh;
+  }
+}
+
+
+@media only screen and (max-device-width: 568px) {
+  #details{
+    p{
+      font-size: 1.5vh;
+    }
+  }
+}
+
+@media only screen and (max-device-width: 1196px) {
+
+  #details{
+    padding-top: 1vh;
+    p{
+      font-size: 3vh;
+    }
+  }
+
+  #particles-js{
+    display: none;
+  }
+}
+
+.aboutme{
+  max-width: 850px;
+
+}
+

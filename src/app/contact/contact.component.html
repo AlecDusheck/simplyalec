@@ -1,0 +1,29 @@
+<div class="wave"></div>
+<div id="title">
+  <p>Contact me</p>
+</div>
+<div id="details">
+  <div class="row contact-methods">
+    <div class="contact-method">
+      <span class="contact-method-title">
+        Contact via email:
+      </span>
+      <p><b>No problem!</b> Shoot Me an email at alec (at) simplyalec.com.</p>
+    </div>
+    <div class="contact-method">
+      <span class="contact-method-title">
+        Get my resume:
+      </span>
+      <p><b>That's also not a problem. </b>However, I'm going to have you type in your email below to get sent a copy of
+        my resume.</p>
+      <p><b>Why do you need my email? </b>The email is a precaution to ensure random people don't download it. </p>
+      <div class="alert-bademail" *ngIf="!resumeRequestForm.controls['email'].valid && resumeRequestForm.controls['email'].touched" >*Invalid email.</div>
+      <form [formGroup]="resumeRequestForm" (submit)="onSubmit(resumeRequestForm.value)" >
+        <div class="row emailSubmit">
+          <input type="email" [formControl]="resumeRequestForm.controls['email']" id="emailField" placeholder="Email">
+          <input [disabled]="loading || resumeRequestForm.invalid || submitted" id="submitBtn" type="submit" value="{{subText}}">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

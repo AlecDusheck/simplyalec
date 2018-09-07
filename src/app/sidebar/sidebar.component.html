@@ -1,0 +1,25 @@
+<nav>
+  <ul>
+    <li>
+      <a class="head-img">
+        <img src="assets/bolt_white.png" alt="">
+      </a>
+      <a routerLink="" [class.activated]="currentUrl == '/'">
+        <i class="material-icons">person_outline</i>
+        <span class="info">About</span>
+      </a>
+    </li>
+    <li>
+      <a routerLink="contact" [class.activated]="currentUrl == '/contact'">
+        <i class="material-icons">contact_mail</i>
+        <span class="info">Contact</span>
+      </a>
+    </li>
+    <li>
+      <a routerLink="blog" [class.activated]="currentUrl == '/blog'">
+        <i class="material-icons">description</i>
+        <span class="info">Blog</span>
+      </a>
+    </li>
+  </ul>
+</nav>
