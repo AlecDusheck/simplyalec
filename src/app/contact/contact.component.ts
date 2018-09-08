@@ -42,7 +42,7 @@ export class ContactComponent implements OnInit {
         }else{
           if(result['details_code'] === "throttled_email"){
             this.subText = "Email throttled.";
-          }else{
+          } else{
             this.subText = "Server Error.";
           }
         }

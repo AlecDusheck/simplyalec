@@ -19,7 +19,7 @@ export class ResumeSenderService {
     const headers = new HttpHeaders();
     headers.append('Content-Type', 'application/json');
 
-    return this.http.post('https://api.notalec.com:80/v1/sendResume', JSON.stringify(cr), { headers: headers })
+    return this.http.post('https://api.notalec.com:/v1/sendResume', JSON.stringify(cr), { headers: headers })
       .pipe(map(result => this.result = result));
   }
 }

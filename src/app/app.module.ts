@@ -12,6 +12,7 @@ import { HttpClientModule } from "@angular/common/http";
 
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
     AboutComponent,
     ContactComponent,
     BlogComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
